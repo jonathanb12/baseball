@@ -1,10 +1,9 @@
-#This is Ben
-
 library(tidyverse)
 library(shiny)
 
 #READ IN DATA
-pitchFraming <- read_csv("/Users/benstarks/Desktop/Baseball/Master_Copy_W_Catchers.csv")
+pitchFraming <- read_csv("/Users/jonathanbell/Desktop/Baseball/Master_Copy_W_Catchers.csv")
+#change path above to path on local machine 
 pitchFraming <- pitchFraming[pitchFraming$PitcherTeam == "GEO_BUL",] #only Georgia catchers
 
 
@@ -98,4 +97,3 @@ ui <- fluidPage(
 )
 
 shinyApp(ui, server)
-

@@ -3,7 +3,6 @@ library(dplyr)
 library(ggplot2)
 
 pitchFraming <- read.csv("/Users/jonathanbell/Desktop/Baseball/Master_Copy_W_Catchers.csv")
-pitchFraming <- read_csv("/Users/jonathanbell/Desktop/Baseball/Master_Copy_W_Catchers.csv")
 
 pitchFraming <- pitchFraming[pitchFraming$PitcherTeam == "GEO_BUL",]
 pitchFraming <- pitchFraming[pitchFraming$PitchCall == "BallCalled" | pitchFraming$PitchCall == "StrikeCalled",] #only called pitches

@@ -1,7 +1,11 @@
 
 library(dplyr)
 library(ggplot2)
+<<<<<<< HEAD
 pitchFraming <- read.csv("/Users/jonathanbell/Desktop/Baseball/Master_Copy_W_Catchers.csv")
+=======
+pitchFraming <- read_csv("/Users/jonathanbell/Desktop/Baseball/Master_Copy_W_Catchers.csv")
+>>>>>>> 04063eb0d186db7664b197108569a33d1725d4d4
 pitchFraming <- pitchFraming[pitchFraming$PitcherTeam == "GEO_BUL",]
 pitchFraming <- pitchFraming[pitchFraming$PitchCall == "BallCalled" | pitchFraming$PitchCall == "StrikeCalled",] #only called pitches
 pitchFraming <- pitchFraming[pitchFraming$PitcherTeam == "GEO_BUL",] #only Georgia catchers
@@ -42,4 +46,7 @@ myPlot <- ggplot(data, aes(x = runsSaved, y = Catcher, fill = (runsSaved > 0))) 
   geom_col() +
   coord_flip()
 myPlot
+<<<<<<< HEAD
 
+=======
+>>>>>>> 04063eb0d186db7664b197108569a33d1725d4d4

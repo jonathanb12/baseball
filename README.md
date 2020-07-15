@@ -1,5 +1,2 @@
 # baseball
-baseball project
-A line I wrote on my local computer
-test
-A line I wrote
+A project by Ben Starks, Chris Gauthier and I to visualize catcher pitch framing on the UGA baseball team.
